@@ -1,0 +1,42 @@
+{
+  "name": "translate-on-site",
+  "version": "1.0.0",
+  "description": "A web extension for autotranslating entire webpages on load or on change",
+  "dependencies": {
+    "@google-cloud/translate": "^1.1.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "google-translate-api": "^2.3.0",
+    "jquery": "^3.3.1",
+    "languagedetect": "^1.1.1",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-zip": "^4.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "1.11.1",
+    "web-ext": "^2.4.0",
+    "webpack": "^3.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "John Devitt",
+  "license": "ISC"
+}
