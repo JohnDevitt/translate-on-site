@@ -1,0 +1,52 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #FFFEFD;
+}
+
+hr {
+  border: none;
+  height: 1px;
+}
+
+#info {
+  padding: 10px 35px;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+#titleContainer {
+  background-color: #3CA7D2;
+  padding: 0px 35px;
+  color: #FFFEFD;
+  font-family: 'Arvo', Georgia, Times, serif;
+  font-size: 30px;
+  line-height: 70px;
+}
+
+#selectorContainer {
+  padding: 10px 35px;
+  font-size: 30px;
+  line-height: 30px;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+#alwaysTranslate {
+  padding: 10px 35px;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+#actions {
+  padding: 10px 35px;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+#actionOriginal {
+  padding: 0px 10px;
+}

@@ -8,6 +8,6 @@
     "default_title": "Translate on Site",
     "default_popup": "popup/index.html"
   },
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://unpkg.com/vue; object-src 'self'",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://unpkg.com/vue https://unpkg.com/element-ui/lib/theme-chalk/index.css https://unpkg.com/element-ui/lib/index.js https://fonts.googleapis.com/*; object-src 'self'",
   "permissions": ["<all_urls>"]
 }
