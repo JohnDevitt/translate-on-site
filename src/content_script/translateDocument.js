@@ -38,11 +38,12 @@ const walkDOM = (element, setTranslationID, DOMNodesWithVisibleText) => {
       visibleTextList
     })
   }
-
+/*
   const res = await fetch('http://localhost:3000/translate', reqObject)
   const translatedList = await res.json()
 
   _.zip(elementsWithVisibleText, translatedList).forEach(element => {
     document.querySelector('[translationID=' + element[0] + ']').childNodes[0].nodeValue = element[1]
   })
+*/
 })()

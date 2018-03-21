@@ -1,22 +1,13 @@
 {
   "manifest_version": 2,
   "name": "Translate on Site",
-  "descrription": "A web extension for autotranslating pages on load or on change.",
+  "description": "A web extension for autotranslating pages on load or on change.",
   "version": "1.0.0",
   "browser_action": {
     "default_icon": "icons/compass.svg",
     "default_title": "Translate on Site",
     "default_popup": "popup/index.html"
   },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["content_script.js"]
-    }
-  ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://unpkg.com/vue; object-src 'self'",
   "permissions": ["<all_urls>"]
 }
