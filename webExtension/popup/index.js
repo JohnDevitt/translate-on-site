@@ -2,7 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     options: [{
-        value: 'English',
+        value: 'en',
         label: 'English'
       }, {
         value: 'German',
