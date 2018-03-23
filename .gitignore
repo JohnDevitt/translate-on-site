@@ -1,2 +1,4 @@
 node_modules/
 webExtension/content_script.js
+webExtension/popup/popup.js
+webExtension/popup/popup.js.css

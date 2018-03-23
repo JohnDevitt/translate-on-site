@@ -6,7 +6,7 @@
   "browser_action": {
     "default_icon": "icons/compass.svg",
     "default_title": "Translate on Site",
-    "default_popup": "whatever/index.html"
+    "default_popup": "popup/popup.html"
   },
   "content_security_policy":
     "script-src 'self' 'unsafe-eval' http://* https://*; object-src 'self'",

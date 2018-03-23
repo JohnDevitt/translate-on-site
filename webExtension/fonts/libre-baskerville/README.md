@@ -1,5 +1,4 @@
-Libre Baskerville Fonts
-======================
+# Libre Baskerville Fonts
 
 Libre Baskerville is a webfont family optimized for body text.
 It's Based on 1941 ATF Baskerville Specimens but it has a taller x-height, wider counters and less contrast that allow it to work on small sizes in any screen.
@@ -9,8 +8,8 @@ Afar, Afrikaans, Albanian, Azerbaijani, Basque, Belarusian, Bislama, Bosnian, Br
 
 ## License
 
-- Libre Baskerville is licensed under the SIL Open Font License v1.1 (<http://scripts.sil.org/OFL>)
-- To view the copyright and specific terms and conditions please refer to [OFL.txt](https://github.com/impallari/Libre-Baskerville/blob/master/OFL.txt)
+* Libre Baskerville is licensed under the SIL Open Font License v1.1 (<http://scripts.sil.org/OFL>)
+* To view the copyright and specific terms and conditions please refer to [OFL.txt](https://github.com/impallari/Libre-Baskerville/blob/master/OFL.txt)
 
 ## Authors
 
