@@ -1,3 +1,47 @@
 {
-    "extends": "standard"
+  "plugins": ["lodash", "filenames", "prettier"],
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:lodash/recommended",
+    "prettier"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "__DEV__": true,
+    "fetch": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "arrowParens": "avoid",
+        "bracketSpacing": false,
+        "jsxBracketSameLine": true,
+        "parser": "babylon",
+        "printWidth": 85,
+        "rcVerbose": true,
+        "semi": false,
+        "singleQuote": false,
+        "tabWidth": 2,
+        "trailingComma": "none",
+        "useTabs": false
+      }
+    ],
+    "filenames/match-exported": "error",
+    "lodash/import-scope": "off",
+    "lodash/prefer-lodash-method": "off",
+    "lodash/prefer-constant": "off",
+    "lodash/prefer-lodash-chain": "off",
+    "lodash/path-style": ["error", "as-needed"],
+    "react/sort-prop-types": "error",
+    "promise/prefer-await-to-then": "error",
+    "prefer-const": "error"
+  },
+  "parser": "babel-eslint"
 }
