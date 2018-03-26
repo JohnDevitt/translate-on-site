@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Translate on Site",
-  "description": "A web extension for autotranslating pages on load or on change.",
+  "description":
+    "A web extension for autotranslating pages on load or on change.",
   "version": "1.0.0",
   "browser_action": {
     "default_icon": "icons/compass.svg",
@@ -9,6 +10,6 @@
     "default_popup": "popup/popup.html"
   },
   "content_security_policy":
-    "script-src 'self' 'unsafe-eval' http://* https://*; object-src 'self'",
+    "script-src 'self' 'unsafe-eval' http://* https://* moz-extension://*; object-src 'self'",
   "permissions": ["<all_urls>"]
 }

@@ -1,12 +1,14 @@
 <template>
   <div>
     <titleSection />
+    <info />
   </div>
 </template>
 
 <script>
   import { styled, injectGlobal } from 'vue-styled-components'
   import titleSection from './components/titleSection.vue'
+  import info from './components/info.vue'
 
   injectGlobal`
   	@font-face {
@@ -24,6 +26,12 @@
       margin: 0;
       background-color: #FFFEFD;
   	}
+
+    hr {
+      background: #8B92A6;
+      border: none;
+      height: 1px;
+    }
   `
 
   export default {
@@ -31,7 +39,10 @@
     data () {
       return {}
     },
-    components: { titleSection }
+    components: {
+      titleSection,
+      info,
+    }
   }
 </script>
 

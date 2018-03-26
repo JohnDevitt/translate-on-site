@@ -54,8 +54,10 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "file-loader"
+        // test: /\.(woff|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: "file-loader?name=fonts/[name].[ext]"
+        // loader: "file-loader"
       }
     ]
   },

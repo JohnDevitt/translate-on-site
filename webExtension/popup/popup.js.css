@@ -8,8 +8,8 @@
 }
 @font-face {
   font-family: element-icons;
-  src: url(2fad952a20fbbcfd1bf2ebb210dccf7a.woff) format("woff"),
-    url(6f0a76321d30f3c8120915e57f7bd77e.ttf) format("truetype");
+  src: url(fonts/element-icons.woff) format("woff"),
+    url(fonts/element-icons.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -10864,4 +10864,14 @@
   box-sizing: border-box;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+.info {
+  font-family: "Arial", Georgia, Times, serif;
+  font-size: 18px;
+}
+.info .el-tag {
+  font-size: 18px;
+}
+.info .el-tag + .el-tag {
+  margin-left: 10px;
 }
