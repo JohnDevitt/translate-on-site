@@ -1,13 +1,17 @@
-'use strict'
+"use strict";
 
-var gulp = require('gulp')
-var zip = require('gulp-zip')
+const gulp = require("gulp");
+const zip = require("gulp-zip");
 
-var files = ['./webExtension/manifest.json', './webExtension/content_script.js']
-var xpiName = 'translate-on-site.xpi'
+const files = [
+  "./webExtension/manifest.json",
+  "./webExtension/content_script.js"
+];
+const xpiName = "./build/translate-on-site.xpi";
 
-gulp.task('default', function () {
-  gulp.src(files)
+gulp.task("default", () =>
+  gulp
+    .src(files)
     .pipe(zip(xpiName))
-    .pipe(gulp.dest('.'))
-})
+    .pipe(gulp.dest("."))
+);

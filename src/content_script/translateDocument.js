@@ -1,51 +1,44 @@
 import _ from "lodash";
-import getVisibleText from "./getVisibleText";
+import AWS from "aws-sdk";
+import keys from "./keys.json";
 
-const walkDOM = (element, setTranslationID, DOMNodesWithVisibleText) => {
-  const visibleText = getVisibleText(element);
-  const trimmedText = _.trim(visibleText);
-  if (visibleText && trimmedText) {
-    const translationID = setTranslationID(element);
-    DOMNodesWithVisibleText.push({ id: translationID, text: visibleText });
-  }
-  if (element.children.length > 0) {
-    Array.from(element.children).forEach(child =>
-      walkDOM(child, setTranslationID, DOMNodesWithVisibleText)
-    );
-  }
+AWS.config.region = keys.IdentityPoolId.split(":")[0];
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+  IdentityPoolId: keys.IdentityPoolId
+});
+const translate = new AWS.Translate({ apiVersion: "2017-07-01" });
+
+const getVisibleText = element => {
+  if (
+    ["BODY", "SCRIPT", "NOSCRIPT", "STYLE"].includes(element.tagName) ||
+    element.childNodes.length === 0
+  )
+    return false;
+  return element.childNodes[0].nodeValue;
 };
 
-(async () => {
-  let count = 0;
-  const setTranslationID = element => {
-    const translationID = "translateOnSiteInsertedID" + count++;
-    element.setAttribute("translationID", translationID);
-    return translationID;
+const translateString = untranslatedString => {
+  const translationObject = {
+    Text: untranslatedString,
+    SourceLanguageCode: "auto",
+    TargetLanguageCode: "de"
   };
-  let DOMNodesWithVisibleText = [];
-  walkDOM(document.body, setTranslationID, DOMNodesWithVisibleText);
 
-  const visibleTextList = DOMNodesWithVisibleText.map(element => element.text);
-  const elementsWithVisibleText = DOMNodesWithVisibleText.map(
-    element => element.id
+  return new Promise((resolve, reject) =>
+    translate.translateText(
+      translationObject,
+      (err, data) => (err ? reject(err) : resolve(data.TranslatedText))
+    )
   );
+};
 
-  let reqObject = {
-    method: "POST",
-    headers: new Headers({
-      "Content-Type": "application/json"
-    }),
-    body: JSON.stringify({
-      target: "es",
-      visibleTextList
-    })
-  };
-  /*
-  const res = await fetch('http://localhost:3000/translate', reqObject)
-  const translatedList = await res.json()
+const DomWalk = async element => {
+  const visibleText = getVisibleText(element);
+  const trimmedText = _.trim(visibleText);
+  if (visibleText && trimmedText)
+    element.innerHTML = await translateString(trimmedText);
+  if (element.children.length > 0)
+    Array.from(element.children).forEach(child => DomWalk(child));
+};
 
-  _.zip(elementsWithVisibleText, translatedList).forEach(element => {
-    document.querySelector('[translationID=' + element[0] + ']').childNodes[0].nodeValue = element[1]
-  })
-*/
-})();
+DomWalk(document.body);

@@ -6,6 +6,8 @@
   "dependencies": {
     "@google-cloud/translate": "^1.1.0",
     "aphrodite": "^2.1.0",
+    "aws-sdk": "^2.411.0",
+    "babel-core": "^6.26.3",
     "body-parser": "^1.18.2",
     "element-ui": "^2.2.2",
     "express": "^4.16.3",

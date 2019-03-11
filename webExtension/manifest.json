@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Translate on Site",
-  "description": "A web extension for autotranslating pages on load or on change.",
+  "description":
+    "A web extension for autotranslating pages on load or on change.",
   "version": "1.0.0",
   "browser_action": {
     "default_icon": "icons/compass.svg",
@@ -10,5 +11,16 @@
   },
   "content_security_policy":
     "script-src 'self' 'unsafe-eval' http://* https://*; object-src 'self'",
-  "permissions": ["<all_urls>"]
+  "permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "applications": {
+    "gecko": {
+      "id": "translate@on.site"
+    }
+  }
 }
