@@ -4,4 +4,6 @@ src/content_script/keys.json
 webExtension/content_script.js
 webExtension/popup/popup.js
 webExtension/popup/popup.js.css
+webExtension/*.woff
+webExtension/*.ttf
 webExtension/web-ext-artifacts/*
