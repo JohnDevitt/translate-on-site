@@ -3,14 +3,15 @@
   "name": "Translate on Site",
   "description":
     "A web extension for autotranslating pages on load or on change.",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "browser_action": {
-    "default_icon": "icons/compass.svg",
     "default_title": "Translate on Site",
     "default_popup": "popup/popup.html"
   },
-  "content_security_policy":
-    "script-src 'self' 'unsafe-eval' http://* https://*; object-src 'self'",
+  "icons": {
+    "48": "icons/compass.svg",
+    "96": "icons/compass.svg"
+  },
   "permissions": ["<all_urls>"],
   "content_scripts": [
     {

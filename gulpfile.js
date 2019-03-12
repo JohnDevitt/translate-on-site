@@ -5,13 +5,15 @@ const zip = require("gulp-zip");
 
 const files = [
   "./webExtension/manifest.json",
-  "./webExtension/content_script.js"
+  "./webExtension/popup/*",
+  "./webExtension/content_script.js",
+  "./webExtension/compass.svg"
 ];
-const xpiName = "./build/translate-on-site.xpi";
+const xpiName = "translate-on-site.xpi";
 
 gulp.task("default", () =>
   gulp
     .src(files)
     .pipe(zip(xpiName))
-    .pipe(gulp.dest("."))
+    .pipe(gulp.dest("./build"))
 );

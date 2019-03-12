@@ -35,8 +35,11 @@ const translateString = untranslatedString => {
 const DomWalk = async element => {
   const visibleText = getVisibleText(element);
   const trimmedText = _.trim(visibleText);
-  if (visibleText && trimmedText)
-    element.innerHTML = await translateString(trimmedText);
+  if (visibleText && trimmedText) {
+    const translatedString = await translateString(trimmedText);
+    console.log(trimmedText, translatedString);
+    element.childNodes[0].nodeValue = translatedString;
+  }
   if (element.children.length > 0)
     Array.from(element.children).forEach(child => DomWalk(child));
 };
