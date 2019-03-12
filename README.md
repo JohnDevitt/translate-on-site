@@ -1,16 +1,16 @@
-###Translate on Site is webExtension for automatically translating websites on load.
+### Translate on Site is webExtension for automatically translating websites on load 🌐🌎🌍🌏🗺
 
-#Configuring AWS
+# Configuring AWS
 
 This web extension uses AWS Translate for machine translation, as well as AWS Cognito to provide **unauthenticated access** to AWS Translate. As Such both of these services need to be configured before running the app. Below are steps I followed to set this up(largely based on [this](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-browser.html) guide).
 
-###Step 1: Create an Amazon Cognito Identity Pool
+### Step 1: Create an Amazon Cognito Identity Pool
 
 Firstly, an Amazon Cognito identity pool to provide unauthenticated access to the Amazon Translate service needs to be created. Creating an identity pool also creates two IAM roles, one to support users authenticated by an identity provider and the other to support unauthenticated guest users.
 
 For now, only the unauthenticated user role will be used. Authenticated users may be added later.
 
-###To create an Amazon Cognito identity pool
+### To create an Amazon Cognito identity pool
 
 1.  Sign in to the AWS Management Console and open the Amazon Cognito console at [https://console.aws.amazon.com/cognito/](https://console.aws.amazon.com/cognito/).
 
@@ -38,10 +38,11 @@ For now, only the unauthenticated user role will be used. Authenticated users ma
 }
 ```
 
-###Step 2: Add a Policy to the Created IAM Role
+### Step 2: Add a Policy to the Created IAM Role
+
 To enable browser script access to Amazon Translate for machine translation, use the unauthenticated IAM role created for your Amazon Cognito identity pool. This requires you to add an IAM policy to the role. For more information on IAM roles, see [Creating a Role to Delegate Permissions to an AWS Service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) in the _IAM User Guide._
 
-###To add an Amazon Translate policy to the IAM role associated with unauthenticated users
+### To add an Amazon Translate policy to the IAM role associated with unauthenticated users
 
 1.  Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
