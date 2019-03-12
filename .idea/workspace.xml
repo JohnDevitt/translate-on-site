@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45119f13-70fb-40d1-9ba1-4d499b759c76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/translate-on-site.xpi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content_script/DomWalk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content_script/getVisibleText.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content_script/keys.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/content_script/keys.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content_script/translateDocument.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content_script/translateDocument.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content_script/translateString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/LeagueSpartan-Bold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/ofl-faq.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/ofl.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/readme.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/webfonts/leaguespartan-bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/webfonts/leaguespartan-bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/webfonts/leaguespartan-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/webfonts/leaguespartan-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/webfonts/leaguespartan-bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/league-spartan-master/webfonts/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/libre-baskerville/FONTLOG.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/libre-baskerville/LibreBaskerville-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/libre-baskerville/LibreBaskerville-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/libre-baskerville/LibreBaskerville-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/libre-baskerville/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/libre-baskerville/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/compass.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/popup/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/getters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/mutation-types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/mutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webExtension/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webExtension/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/webExtension/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webExtension/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/webExtension/popup/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webExtension/popup/popup.js.css" beforeDir="false" afterPath="$PROJECT_DIR$/webExtension/popup/popup.js.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/webExtension/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -66,17 +31,17 @@
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="js" value="43" />
-          <entry key="json" value="5" />
-          <entry key="md" value="2" />
+          <entry key="json" value="7" />
+          <entry key="md" value="3" />
           <entry key="svg" value="1" />
           <entry key="vue" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="7" />
           <entry key="JavaScript" value="43" />
-          <entry key="Markdown" value="2" />
+          <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SVG" value="1" />
           <entry key="Vue.js" value="6" />
@@ -92,7 +57,7 @@
           <entry key="gitignore" value="77" />
           <entry key="js" value="1957" />
           <entry key="json" value="123" />
-          <entry key="md" value="2133" />
+          <entry key="md" value="3023" />
           <entry key="svg" value="12" />
         </counts>
       </usages-collector>
@@ -100,7 +65,7 @@
         <counts>
           <entry key="JSON" value="123" />
           <entry key="JavaScript" value="1957" />
-          <entry key="Markdown" value="2133" />
+          <entry key="Markdown" value="3023" />
           <entry key="PLAIN_TEXT" value="77" />
           <entry key="SVG" value="12" />
         </counts>
@@ -109,13 +74,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
               <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.eslintrc.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -131,6 +101,27 @@
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="733">
+                <caret line="67" column="404" selection-start-line="67" selection-start-column="404" selection-end-line="67" selection-end-column="404" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/content_script/keys.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" lean-forward="true" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -156,7 +147,6 @@
         <option value="$PROJECT_DIR$/webExtension/content_script.js" />
         <option value="$PROJECT_DIR$/../march.js" />
         <option value="$PROJECT_DIR$/webExtension/keys.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/webExtension/icons/compass.svg" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/content_script/keys.json" />
@@ -164,6 +154,7 @@
         <option value="$PROJECT_DIR$/webExtension/manifest.json" />
         <option value="$PROJECT_DIR$/src/popup/popup.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -188,7 +179,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="26" />
     <option name="width" value="1410" />
     <option name="height" value="1024" />
@@ -215,17 +206,6 @@
               <item name="translate-on-site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="content_script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="translate-on-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="translate-on-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="popup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="translate-on-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="translate-on-site" type="462c0819:PsiDirectoryNode" />
-              <item name="webExtension" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -277,18 +257,18 @@
       <workItem from="1551212929409" duration="6903000" />
       <workItem from="1551538067115" duration="9343000" />
       <workItem from="1552316849804" duration="4573000" />
-      <workItem from="1552329755865" duration="12032000" />
+      <workItem from="1552329755865" duration="13357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32851000" />
+    <option name="totallyTimeSpent" value="34176000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1410" height="1024" extended-state="0" />
+    <frame x="0" y="26" width="1680" height="1024" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18286537" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -360,16 +340,6 @@
     <entry file="file://$PROJECT_DIR$/webExtension/keys.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="667">
-            <caret line="54" selection-start-line="54" selection-end-line="54" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webExtension/icons/compass.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -428,13 +398,6 @@
     <entry file="file://$PROJECT_DIR$/src/store/actions.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/content_script/keys.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/popup/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-158" />
@@ -467,6 +430,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/content_script/keys.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" lean-forward="true" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="733">
+            <caret line="67" column="404" selection-start-line="67" selection-start-column="404" selection-end-line="67" selection-end-column="404" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
