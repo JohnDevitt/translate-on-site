@@ -1,0 +1,83 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.12.3/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/devitt_john/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/devitt_john/Personal/translate-on-site/node_modules/adbkit/node_modules/debug'
+
+npm manifest: 
+  {
+    "name": "translate-on-site",
+    "version": "1.0.0",
+    "description":
+      "A web extension for autotranslating entire webpages on load or on change",
+    "dependencies": {
+      "@google-cloud/translate": "^1.1.0",
+      "aphrodite": "^2.1.0",
+      "aws-sdk": "^2.411.0",
+      "babel-core": "^6.26.3",
+      "body-parser": "^1.18.2",
+      "element-ui": "^2.2.2",
+      "express": "^4.16.3",
+      "google-translate-api": "^2.3.0",
+      "jquery": "^3.3.1",
+      "languagedetect": "^1.1.1",
+      "lodash": "^4.17.5",
+      "vue": "^2.5.16",
+      "vue-router": "^3.0.1",
+      "vue-styled-components": "^1.2.1",
+      "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+      "babel-loader": "^7.1.4",
+      "babel-plugin-component": "^1.1.1",
+      "babel-preset-es2015": "^6.24.1",
+      "babel-preset-stage-2": "^6.24.1",
+      "css-loader": "^0.28.11",
+      "element-theme-chalk": "^2.7.2",
+      "eslint": "^4.19.0",
+      "eslint-config-standard": "^11.0.0",
+      "eslint-plugin-import": "^2.9.0",
+      "eslint-plugin-node": "^6.0.1",
+      "eslint-plugin-promise": "^3.7.0",
+      "eslint-plugin-standard": "^3.0.1",
+      "extract-text-webpack-plugin": "^3.0.2",
+      "file-loader": "^1.1.11",
+      "husky": "^0.14.3",
+      "lint-staged": "^7.0.0",
+      "node-sass": "^4.7.2",
+      "prettier": "1.11.1",
+      "sass-loader": "^6.0.7",
+      "vue-loader": "^14.2.1",
+      "vue-template-compiler": "^2.5.16",
+      "web-ext": "^2.4.0",
+      "webpack": "^3.11.0"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack",
+      "precommit": "lint-staged"
+    },
+    "lint-staged": {
+      "*.{js,json,css,md}": ["prettier --write", "git add"]
+    },
+    "author": "John Devitt",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
